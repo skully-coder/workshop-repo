@@ -1,12 +1,12 @@
-﻿# workshop-repo
-This repo is to demonstrate the functions of Git and GitHub
+﻿# Workshop-repo
+This repo is to demonstrate the functions of Git and GitHub which were explained and discussed in a workshop of Github & Git.
 
 
 ## Some of the important points that were discussed in the workshop are listed below-   
 
 1) commits cannot be deleted because each commit’s hashcode is linked with previous hashcode
 
-git rm --cached Main.class
+`git rm --cached Main.class`
 
 cached means don’t delete the file, just remove it from staging area
 last commit is HEAD
