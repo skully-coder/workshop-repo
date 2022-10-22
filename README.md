@@ -2,7 +2,7 @@
 This repo is to demonstrate the functions of Git and GitHub
 
 
-#Some of the important points that were discussed in the workshop are listed below-   
+## Some of the important points that were discussed in the workshop are listed below-   
 
 1) commits cannot be deleted because each commit’s hashcode is linked with previous hashcode
 
