@@ -4,7 +4,7 @@ This repo is to demonstrate the functions of Git and GitHub which were explained
 
 ## Some of the important points that were discussed in the workshop are listed below-   
 
-1) commits cannot be deleted because each commit’s hashcode is linked with previous hashcode
+<b>1)</b> commits cannot be deleted because each commit’s hashcode is linked with previous hashcode
 
 `git rm --cached Main.class`
 
