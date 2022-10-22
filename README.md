@@ -1,10 +1,10 @@
-﻿# Workshop-repo
+﻿# Workshop-Repo
 This repo is to demonstrate the functions of Git and GitHub which were explained and discussed in a workshop of Github & Git.
 
 
 ## Some of the important points that were discussed in the workshop are listed below-   
 
-<b>1)</b> commits cannot be deleted because each commit’s hashcode is linked with previous hashcode
+1) Commits cannot be deleted because each commit’s hashcode is linked with previous hashcode
 
 `git rm --cached Main.class`
 
@@ -13,11 +13,11 @@ last commit is HEAD
 
 2) HEAD is a pointer pointer to commit
 
-git checkout master^ (Head goes one step above)	(head will now point to previous commit)
+`git checkout master^ `(Head goes one step above)	(head will now point to previous commit)
 // OR 
-git checkout HEAD^ 
+`git checkout HEAD^` 
 
-git checkout master~2		// goes above 2 commit wrt master
+`git checkout master~2		// goes above 2 commit wrt master`
 
 master is always pointing at the leaf i.e. name of the branch always points at leaf node
 master means the project is stable and if we need to change we need to make another branch and change there
