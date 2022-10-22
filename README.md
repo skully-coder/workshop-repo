@@ -39,20 +39,17 @@ NOW:
 `git checkout feature`
 now * will be on feature, hence we can make changes
 
-`git commit -m “something”
-git commit -m “something”
-git commit -m “something”
-`
+`git commit -m “something”`
 We can add a message while committing to tell the changes made by us in a particular branch
 
-`git checkout master
-git commit -m “master”`
+`git checkout master`
+`git commit -m “master”`
 now master will be in a new branch and feature will be on another branch
 
 now suppose we are done with feature and we want to add them in main master branch
 
-`git checkout master
-git merge feature`
+`git checkout master`
+`git merge feature`
 
 new branch will be created with and it will be master branch
 
