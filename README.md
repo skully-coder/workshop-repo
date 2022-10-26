@@ -57,3 +57,126 @@ new branch will be created with and it will be master branch
 
 then we need to manually choose which commit we want to choose. 
 git merge feature...
+
+
+## Advanced Level Git Commands
+And now the time to up one more level. In this section, you will learn the advanced Git commands. These commands will take time and practice.
+
+Once you know the basics of these commands, it will be easy to use them every day.
+
+1. git rebase 
+Git rebase similar to the git merge command. It integrates two branches into a single branch with one exception. A git rebase command rewrites the commit history.
+
+You should use the Git rebase command when you have multiple private branches to consolidate into a single branch. And it will make the commit history linear.
+
+Usage 
+
+`$ git rebase <base>`
+
+
+
+2. git bisect 
+The Git bisect command helps you to find bad commits. 
+
+Usage
+
+i) To start the git bisect 
+
+`$ git bisect start`
+
+
+ii) let git bisect know about a good commit
+
+`$ git bisect good a123` 
+
+
+iii) And let git bisect know about a bad commit
+
+`$ git bisect bad z123`
+
+With Git bisect you can narrow down the broken code within a few minutes.
+
+
+3. git cherry-pick 
+Git cherry-pick is a helpful command. It's a robust command and allows you to pick any commit from any branch and apply it to any other branch.
+
+Usage
+
+`$ git cherry-pick <commit-hash>`
+
+Git cherry-pick doesn’t modify the history of a repository; instead, it adds to the history.
+
+
+
+4. git archive 
+Git archive command will combine multiple files into a  single file. It's like a zip utility, so it means you can extract the archive files to get individual files.
+
+Usage 
+
+`$ git archive --format zip HEAD > archive-HEAD.zip`
+
+It will create a zip archive of the current revision.
+
+
+
+5. git pull --rebase
+Most of the time, you need to do rebase (and no merge) when you use Git pull.
+
+In that case, you can use the option
+
+Usage
+
+`$ git pull --rebase`
+
+It will help you to keep the history clean. Also, you can avoid multiple merges.
+
+
+
+6. git blame 
+If you need to examine the content of any file line by line,  you need to use git blame. It helps you to determine who made the changes to a file.
+
+Usage 
+
+`$ git blame <your_file_name>`
+
+
+
+7. git tag
+In Git, tags are helpful, and you can use them to manage the release. You can think of a Git tag like a branch that will not change. It is significantly more important if you are making a public release.
+
+Usage 
+
+`$ git tag -a v1.0.0`
+
+
+8. git verify-commit
+The git verify-commit command will check the gpg signature. GPG or “GNU Privacy Guard” is the tool used in sign files and contains their signatures.
+
+Usage 
+
+`$ git verify-commit <commit>`
+
+
+
+9. git verify-tag
+In the same way, you can confirm a tag.
+
+Usage 
+
+`$ git verify-tag <tag>`
+
+
+10. git diff
+Most of the time, you need to compare two git files or branches before you commit or push. Here is a handy command to do that. 
+
+Usage
+
+i) to compare the working directory with the local repo:
+
+`$ git diff HEAD <filename>`
+
+ii) to compare two branches:
+
+`$ git diff <source branch> <target branch>`
+
+
